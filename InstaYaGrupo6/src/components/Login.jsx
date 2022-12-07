@@ -24,7 +24,7 @@ export function Login() {
     }
 
     function handleSubmit(evt){
-        const url = "http://localhost:9000/api/users/login";
+        const url = "https://backinstaya-production.up.railway.app/api/users/login";
 
         const config = {
             headers:{
