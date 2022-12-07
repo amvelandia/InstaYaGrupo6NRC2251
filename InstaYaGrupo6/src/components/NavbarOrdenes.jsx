@@ -1,7 +1,15 @@
 import '../App.css'
 import logo from '../images/Logo.png'
+import { useNavigate } from "react-router-dom";
+
 
 export function NavbarOrdenes() {
+  const navigate = useNavigate();
+
+    function handleCerrarSesion(evt){
+        localStorage.setItem("accessToken", "");
+        navigate("/login");
+    }
     return (
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-blue-dark rounded-top pt-1 pb-0">
@@ -27,7 +35,7 @@ export function NavbarOrdenes() {
                             <a className="nav-link" href={"./crearOrdenes"}>Crear orden</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href={"./login"}>Cerrar sesión</a>
+                            <a className="nav-link" onclick={handleCerrarSesion} href={"./login"}>Cerrar sesión</a>
                             </li>
                         </ul>
                     </div>

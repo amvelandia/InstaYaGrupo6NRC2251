@@ -34,7 +34,7 @@ export function CrearOrdenes() {
     }
 
     function handleSubmit(evt){
-        const url = "http://localhost:9000/api/orders"; 
+        const url = "https://backinstaya-production.up.railway.app/api/orders"; 
 
         const headers = {
             "x-access-token" : localStorage.getItem("accessToken"),

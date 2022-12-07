@@ -30,7 +30,7 @@ export function Registrar() {
     }
 
     function handleSubmit(evt){
-        const url = "http://localhost:9000/api/users";
+        const url = "https://backinstaya-production.up.railway.app/api/users";
 
         const config = {
             headers:{

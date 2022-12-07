@@ -1,4 +1,5 @@
 FROM node:lts-alpine
+<<<<<<< HEAD
 # Set the working directory to /app inside the container
 WORKDIR /app
 # Copy app files
@@ -16,3 +17,12 @@ ENV NODE_ENV production
 EXPOSE 3000
 # Start the app
 CMD [ "npx", "serve", "build" ]
+=======
+WORKDIR /app
+COPY package.json .
+RUN npm install
+RUN npm run build
+ENV NODE_ENV production
+EXPOSE 3000
+CMD ["npx", "serve", "build"]
+>>>>>>> 45276543a55a949e3e5c1829c0a985143c5ab56d
