@@ -26,7 +26,7 @@ export function ActualizarOrdenes() {
 
     useEffect(()=>
     {
-        const url = "https://backinstaya-production.up.railway.app/api/orders/id";
+        const url = "https://backend2-production-2904.up.railway.app/api/orders/id";
         const headers = {
             "x-access-token" : localStorage.getItem("accessToken"),
             "Content-Type": "application/json",
@@ -63,7 +63,7 @@ export function ActualizarOrdenes() {
     }
 
     function handleSubmit(evt){
-        const url = "https://backinstaya-production.up.railway.app/api/orders/update"; 
+        const url = "https://backend2-production-2904.up.railway.app/api/orders/update"; 
 
         const headers = {
             "x-access-token" : localStorage.getItem("accessToken"),

@@ -11,7 +11,7 @@ export function ListaOrdenes() {
 
   useEffect(()=>
     {
-      const url = "https://backinstaya-production.up.railway.app/api/orders";
+      const url = "https://backend2-production-2904.up.railway.app/api/orders";
       const headers = {
         "x-access-token" : localStorage.getItem("accessToken"),
         "Content-Type": "application/json",
